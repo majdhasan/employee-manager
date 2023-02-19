@@ -1,20 +1,17 @@
 # docker-compose build
 version: '3.9'
 volumes:
-  postgis-data:
+  postgres-data:
 
 services:
   db:
-    image: kartoza/postgis:14-3.2
+    image: postgres:latest
     volumes:
-      - postgis-data:/var/lib/postgresql
+      - postgres-data:/var/lib/postgresql/data
     environment:
-      # If you need to create multiple database you can add coma separated databases eg gis,data
-      - POSTGRES_DB=employee_db,keycloak
+      - POSTGRES_DB=employee_db
       - POSTGRES_USER=employee
-      - POSTGRES_PASS=password
-      - ALLOW_IP_RANGE=0.0.0.0/0
-      # Add extensions you need to be enabled by default in the DB. Default are the five specified below
+      - POSTGRES_PASSWORD=password
     ports:
       - "25432:5432"
     restart: on-failure
