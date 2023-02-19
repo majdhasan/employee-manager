@@ -15,17 +15,17 @@ public class KafkaTopicConfig {
 
   @Bean
   public NewTopic employeeUpdatedTopic() {
-    return new NewTopic(EMPLOYEE_UPDATED_TOPIC, 3, (short) 1);
+    return new NewTopic(EMPLOYEE_UPDATED_TOPIC, 1, (short) 1);
   }
 
   @Bean
   public NewTopic employeeCreatedTopic() {
-    return new NewTopic(EMPLOYEE_CREATED_TOPIC, 3, (short) 1);
+    return new NewTopic(EMPLOYEE_CREATED_TOPIC, 1, (short) 1);
   }
 
   @Bean
   public NewTopic employeeDeletedTopic() {
-    return new NewTopic(EMPLOYEE_DELETED_TOPIC, 3, (short) 1);
+    return new NewTopic(EMPLOYEE_DELETED_TOPIC, 1, (short) 1);
   }
 
   @Bean
