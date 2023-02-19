@@ -1,5 +1,6 @@
 package life.majd.challenge.domain.service;
 
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -14,6 +15,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 @Slf4j
 public class EmployeeServiceImpl implements EmployeeService {
 

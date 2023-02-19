@@ -14,6 +14,7 @@ import java.time.LocalDate;
 import java.util.Set;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -26,6 +27,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Table(name = "employee")
 @ToString
+@Builder
 public class Employee {
 
   @Id
