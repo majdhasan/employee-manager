@@ -1,4 +1,4 @@
-package life.majd.challenge.application;
+package life.majd.challenge.application.controller;
 
 import java.util.List;
 import java.util.Optional;
