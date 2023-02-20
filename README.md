@@ -3,6 +3,21 @@
 
 This is a Spring Boot application that provides a RESTful API for managing employees. It uses a Postgresql database to store employee data and Kafka for messaging.
 
+### Infrastructure
+To spin up this Docker Compose file, follow these steps:
+
+1.  Ensure that Docker and Docker Compose are installed on your machine.
+
+2.  Open a terminal window and run the following command to build the Docker images:
+
+    `docker-compose build`
+
+3.  Once the build process is complete, run the following command to start the containers:
+
+    `docker-compose up`
+
+    This will start the PostgreSQL database, Zookeeper, and Kafka containers.
+
 ## Build and Run
 
 To build and run this application, follow these steps:
